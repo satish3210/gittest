@@ -3,7 +3,8 @@ module "azurerm_resource_group" {
   resource_group_name     = "todo_app_rg"
   resource_group_location = "West US"
 }
-# story add karni he 
+# ye nya resource group create karne wala module hai
+# isme resource group ka naam aur location specify karna hota hai
 module "azurerm_virtual_network" {
   depends_on           = [module.azurerm_resource_group]
   source               = "../Modules/azurerm_virtual_network"
